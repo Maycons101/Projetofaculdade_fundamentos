@@ -1,0 +1,75 @@
+/* TEMA ESCURO */
+
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode section.default.dark,
+body.dark-mode .default.dark {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode section.default.light{
+    background-color: #2d2d2d;
+}
+
+/* SECTION BODY */
+body.dark-mode .default .section-body {
+    max-width: 1140px;
+    margin: auto;
+    background-color: #555;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+body.dark-mode .sec_aluno:hover{
+    box-shadow: 0 4px 8px rgba(90, 90, 90, 0.7);
+}
+
+/* TABLE DARK MODE*/
+body.dark-mode .default .table_task{
+    background-color: #fff;
+}
+
+body.dark-mode .default.light .section-title{
+    color: #fff;
+}
+
+body.dark-mode .section-sobre {
+    color: #fff;
+}
+
+
+body.dark-mode .default.light .section-desc,
+body.dark-mode .default.light .section-subtitle{
+    color: #FFF;
+}
+
+
+
+/* ESTILO DO HEADER DARKMODE */
+
+
+body.dark-mode .menu li a:hover{
+    color: #b28756;
+}
+
+
+
+/* ANIMAÇÕES  */
+
+/* Animação de fade-in para seções */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-out;
+}
